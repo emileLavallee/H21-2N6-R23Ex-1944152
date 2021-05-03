@@ -13,11 +13,15 @@ namespace HeritageClassique
             Salaire = pSalaire;
         }
 
-        public override string ToString()
+        public override string Infos
         {
-            string troisièmeLigne = "Salaire : " + Salaire.ToString("C0");
+            get
+            {
+                string troisièmeLigne = "Salaire : " + Salaire.ToString("C0");
 
-            return base.ToString() + troisièmeLigne;
+                return base.Infos + troisièmeLigne;
+            }
+            
         }
 
     }
